@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Geral -->
+		<title> Conheça o LoremIpsum </title>
+		<meta 	charset="utf-8">
+
+		<!-- Fontes -->
+		<link 	rel="stylesheet"
+  				href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Montserrat" >
+
+		<!-- Favicon -->
+  		<link 	rel="icon"
+  				href="imagens/icon2.png" >
+  		
+  		<!-- Estilo -->
+  		<link 	rel="stylesheet"
+				href="estilo.css" >
+
+  		<!-- Smooth Scroll -->
+  		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("a").on('click', function(event) {
+					if (this.hash !== "") {
+
+						event.preventDefault();
+						
+						var hash = this.hash;
+						
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 1200, function(){   
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<!-- Botao Topo -->
+		<div>
+			<a id="botao-topo" href="#cabecalho">^</a>
+		</div>
+
+		<!-- Cabecalho -->
+		<header id="cabecalho">
+			<div class="menu">
+ 				<a class="botao0">LOREM IPSUM</a>
+ 				<a class="botao3">Cadastre-se</a>
+ 				<a class="botao2" href="#secao4">Contato</a>
+ 				<a class="botao1" href="#secao3">Dúvidas Frequentes</a>
+  				<a class="botao1" href="#secao2">Conheça</a>
+			</div>
+		</header>
+
+		<!-- Secao1 -->
+		<section id="secao1">
+
+			<div>
+				<img src="imagens/porco1.png">
+			</div>
+
+			<div>
+				<h2>Lorem ipsum dolor sit amet,<br>
+				consectetur adipiscing.</h2>
+				<h3>Excepteur sint occaecat cupidatat non proident, <br>
+				sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</section>
+
+		<!-- Secao2 -->
+		<section id="secao2">
+
+			<div id="imagem-secao2">
+				<img src="imagens/money4.jpg">
+			</div>
+
+			<div>
+				<h2>Ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+				Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda <br>
+				mastiro dolore eu fugiat nulla pariatur.</h2>
+			</div>
+
+			<div>
+				<a href="#secao2-a">DOIS MOTIVOS PARA SER UM PARCEIRO </a>
+			</div>
+
+		</section>
+
+		<!-- Secao2-a -->
+		<section id="secao2-a">
+			<br><br><br><br><br><br><br>
+			<div>
+				<h2>Sed tamen tempor magna labore dolore dolor sint tempor <br>
+				duis magna elit veniam aliqua esse amet veniam enim export <br>
+				quid quid veniam aliqua eram noster malis nulla duis fugiat <br>
+				culpa esse aute nulla ipsum velit export irure minim illum fore </h2>
+			</div>
+			
+		</section>
+
+		<!-- Secao3 -->
+		<section id="secao3">
+			<br><br><br><br>
+			<div>
+				<h1>DÚVIDAS FREQUENTES </h1>
+
+				<p>
+					Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, <br>
+					ultricies eget id, aliquam eget nibh et. Maecen aliquam risus at semper.
+				</p>
+
+				<p>
+					Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, <br>
+					ultricies eget id, aliquam eget nibh et. Maecen aliquam risus at semper.
+				</p>
+
+				<p>
+					Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, <br>
+					ultricies eget id, aliquam eget nibh et. Maecen aliquam risus at semper.
+				</p>
+			</div>
+		</section>
+
+		<!-- Secao4 -->
+		<section id="secao4">
+
+			<br><br><br><br>
+			<div>
+				<h1>Contato </h1>
+			</div>
+		</section>
+
+
+	</body>
+</html>
